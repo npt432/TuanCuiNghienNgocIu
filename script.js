@@ -183,7 +183,7 @@ function initGallery() {
         item.className = 'gallery-item';
 
         const img = document.createElement('img');
-        img.src = `/images/${file}`;
+        img.src = `images/${file}`;
         img.onerror = () => {
             console.warn(`Failed to load ${file}`);
         };
