@@ -1,0 +1,43 @@
+{
+  "app": {
+    "title": "Happy Birthday ❤️",
+    "theme": "dark"
+  },
+  "cake": {
+    "width": 600,
+    "height": 450,
+    "candles": 4
+  },
+  "gallery": {
+    "imageWidth": 240,
+    "imageHeight": 427,
+    "gap": 30,
+    "zoomFull": 1.8,
+    "zoomPartial": 1.4,
+    "radius": 20
+  },
+  "colors": {
+    "background": "#1a1a1a",
+    "text": "white",
+    "primary": "#ff8fab",
+    "secondary": "#ff99ac"
+  },
+  "messages": {
+    "cakeButton": "Blow candles 🎂",
+    "cakeMessage": "🎉 Make a wish 🎉",
+    "mainMessage": "Happy Birthday ❤️",
+    "subMessage": "You are my favorite story."
+  },
+  "timing": {
+    "cakeToGallery": 2000,
+    "galleryToMessage": 5000,
+    "flameAnimation": 80
+  },
+  "performance": {
+    "imageQuality": 85,
+    "easing": 0.2,
+    "fps": 60
+  },
+  "port": 5000,
+  "debug": false
+}

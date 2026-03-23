@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SCENE 1: CAKE -->
+    <div id="scene-cake" class="scene active">
+        <canvas id="cake-canvas" width="600" height="450"></canvas>
+        <button id="blow-btn" class="blow-btn">Blow candles 🎂</button>
+    </div>
+
+    <!-- SCENE 2: GALLERY TIMELINE -->
+    <div id="scene-gallery" class="scene">
+        <div class="gallery-header">
+            <h1>Sinh nhật của xinh nhất</h1>
+        </div>
+        <div class="gallery-container">
+            <div id="gallery" class="gallery">
+                <!-- Images will be loaded here -->
+            </div>
+        </div>
+        <div id="gallery-notes" class="gallery-notes">
+            <!-- Notes will be loaded here -->
+        </div>
+    </div>
+
+    <!-- SCENE 3: MESSAGE -->
+    <div id="scene-message" class="scene">
+        <div class="message-box">
+            <h1>Happy Birthday ❤️</h1>
+            <p>You are my favorite story.</p>
+        </div>
+    </div>
+
+    <script>
+        // Images configuration
+        const IMAGE_FILES = [
+            '461712864_1453506185303721_3514670877828437106_n.jpg',
+            '461727573_841179108084603_4459547468734861209_n.jpg',
+            '558059805_18113514898547963_2762732090661156966_n.jpg',
+            '558088674_18113514880547963_8364766706802286513_n.jpg',
+            '558178660_18113710345547963_2631430858734916911_n.jpg',
+            '558248056_18113710318547963_7321789948288817416_n.jpg',
+            '558396345_18113514889547963_6519300088064150839_n.jpg',
+            '558683550_18113710372547963_5670044952792359026_n.jpg',
+            '558962166_18113514907547963_8197947562464691731_n.jpg',
+            '559143720_18113710327547963_5184099007963668543_n.jpg',
+            '559309957_18113710375547963_1838404066396982016_n.jpg',
+            '626181382_18127297894547963_3315159707315782825_n.jpg',
+            '627618994_18127297966547963_5081746054420816726_n.jpg',
+            '627685669_18127297921547963_6357657358219560751_n.jpg',
+            '628388759_18127297957547963_462387205879513186_n.jpg',
+            '629284661_18127297939547963_5686795390785029139_n.jpg',
+            '629576417_18127297912547963_6466911419904305242_n.jpg',
+            '630224763_18127297903547963_2072994581186472259_n.jpg',
+            '634211620_18128441125547963_6262498535527332225_n.jpg',
+            '639736828_18128325835547963_3569914242278002454_n.jpg',
+            '640169620_18128325862547963_3613325520362332731_n.jpg',
+            '640325640_18128325826547963_7261211909291866814_n.jpg',
+            '640431460_18128441071547963_5330432080414097192_n.jpg',
+            '640443905_18128325844547963_1646136266290221897_n.jpg',
+            '640443912_18128325817547963_3135590998124996466_n.jpg',
+            '640465861_18128441062547963_6140955127623235666_n.jpg'
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
