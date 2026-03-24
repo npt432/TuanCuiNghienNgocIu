@@ -7,32 +7,78 @@ const SCENES = {
 
 // Custom notes for each photo (edit these to customize)
 const PHOTO_NOTES = [
-    "Note for photo 1 - A special moment captured! Note for photo 1 - A special moment captured!  Note for photo 1 - A special moment captured!  Note for photo 1 - A special moment captured! ",
-    "Note for photo 2",
-    "Chết mê chết mệt vì nhan sắc này!",
-    "Note for photo 4",
-    "Note for photo 5",
-    "Note for photo 6",
-    "Note for photo 7",
-    "Note for photo 8",
-    "Note for photo 9",
-    "Note for photo 10",
-    "Note for photo 11",
-    "Note for photo 12",
-    "Note for photo 13",
-    "Note for photo 14",
-    "Note for photo 15",
-    "Note for photo 16",
-    "Note for photo 17",
-    "Note for photo 18",
-    "Note for photo 19",
-    "Note for photo 20",
-    "Note for photo 21",
-    "Note for photo 22",
-    "Note for photo 23",
-    "Note for photo 24",
-    "Note for photo 25",
-    "Note for photo 26"
+    "Đây là ảnh đầu tiên của em mà anh lưu về máy :v\n Anh đã nằm ngắm tấm hình này rất lâu",
+    "Meme đầu tiên của honey mà anh lưu 🤣🤣",
+    "Chiếc ảnh làm anh đứng ngồi không yên\nThật may mắn vì em thích buổi gặp đầu tiên của mình :v",
+    "Cái miệng dễ huông chưa kìa =)))\n Em đổi ảnh này làm avatar IG xong dặn anh phải dùng IG nhiều lên :v chắc là để ngắm em nhiều hơn =))) ",
+    "Sao xinh như thế này mà em lại giữ làm của riêng lâu z =)))\nCó khi gửi ảnh này xong anh tỏ tình luôn ấy chứ🤣🤣",
+    "Honey đi làm hôm sinh nhật anh :v còn cẩn thận chụp ảnh lại để khoe với anh :v\n Trông có dễ thương hông cơ chứ =)))",
+    "Em chuẩn bị qua nhà bạn chơi =))) Chỉ chỉ trông cưng ha\n Anh bảo anh nhớ em thì em bảo cũng được :v",
+    "Cái này trông ghét quá 🤣🤣 No comment\nNhưng vì em hay dùng meme này lúc tìm hiểu nên anh cho vào =)))",
+    "Anh đội mũ bảo hiểm cho em nha =)))\n Đợt này em vẫn hơi ngại nhưng cũng ngoan hơn nhiều rồi :v",
+    "Lần đầu vụng trộm bị bà Ning bắt =))) nhưng trông em có vẻ vui lắm 🤣🤣",
+    "Tối đấy em khoe anh nhiều ảnh tốt nghiệp lắm :v\nNhìn muốn hun ghê nhưng anh không dám bảo 🤣🤣",
+    "Thuỳ mị nết na, tiểu thư đài các, dịu dàng thục nữ, ngoan hiền dễ thương, ngọt ngào đáng yêu, xinh đẹp quyến rũ, tinh tế duyên dáng, thanh lịch tao nhã 🤣🤣 ",
+    "Ảnh gia đình lớn của em ♥️ những người quan trọng nhất của em đều ở đây hết rồi :v\n Bao giờ mới tới lượt anh ha :v",
+    "Bố của em ♥️ \nCon chào chú ạ, con nhậu với chú sau nha :v",
+    "Mẹ Sâm của em ♥️\n Con chào cô ạ, con mong gặp cô lắm :v",
+    "Đỉnh nóc kịch trần bay phần phật phần phật =)))",
+    "Anh nghĩ là em muốn đăng story hoặc locket nên anh viết cap cái ảnh trước nhẹ nhàng để em đăng :v chứ anh muốn nói là nhìn em muốn hun quá =))) tại sao anh lại không có ở đóooo",
+    "Anh muốn thơm vào máaaaa",
+    "Cầm lấy 5 nghìn và yêu tôi",
+    "Bạn thân nhất của em :v cảm ơn Ngan vì đã luôn ở bên em suốt thời gian vừa qua, nhưng giờ đến lượt anh rồi :v\n Em báe của Tuấn Cùi",
+    "Nửa trái tim còn lại chắc trên má anh ha :v",
+    "Anh mà đứng bên trái thì đẹp ha =)))",
+    "Tiếc là không được đồng hành cùng em trong ngày đặc biệt này, nhưng anh muốn sẽ được đồng hành cùng em trong những ngày bình thường tiếp theo ♥️",
+    "Lại là những người anh muốn được yêu thương :3",
+    "Đây là ảnh IG của em =))) anh thích quá nên tự lưu về :v",
+    "Trông em gày quáaaaa",
+    "Anh thích ảnh này lắm =))) anh nghĩ là anh có thể ôm em 3 ngày 3 đêm nếu em làm lại như thế =)))",
+    "Cái này thì 3 ngày 2 đêm rưỡi =)))",
+    "Ỏoo, anh sợ con gấu kia nó rơi vào người em quá =)))",
+    "Cái này thì anh không biết nói gì nữa =))) Xinh!",
+    "Ui cái này thì đúng mầm non rồi =))) trông cưng xỉu ha\n Trời ơi nhỏ xíu àaaaa",
+    "3 ngày 3 đêm rưỡi luôn =)))",
+    "Ảnh này không đeo kính trông khác ha =))) Hun!",
+    "Ù cái này xuất xắc nha =))) chụp đẹp người đẹp màu đẹp",
+    "Cái này thì trông xinh thôi 🤣🤣",
+    "Ù tóc xoăn xinh ha =))) mượt thế nhờ, cho ngửi với bạn ơi =)))",
+    "Mắt nhìn nghịch ngợm ha =))) Em cười xinh thật ấy =)))",
+    "Vẫn là ảnh đẹp cười xinh =)))",
+    "Ăn ảnh phết ấy chứ 🤣🤣",
+    "Sao em lại ngồi gần mấy thằng kia hơn anh ?!!!",
+    "Lại nghệ nha =)))",
+    "Đây rồiiiiiiii, ngày đặc biệt của chúng mình :v\n Trông phụng phịu ha =))) nhưng mà 'Hôm nay em xinh lắm' 🤣🤣",
+    "Lần đầu chụp ảnh cho honey, thật vui là em cười nhiều như thế này :v",
+    "Xinh théeee hả giời =))) I love your smileeeeeeeee",
+    "Anh mới phát hiện ra =))) những ảnh nào có anh ở đấy trông em đều hạnh phúc hơn hẳn =)))",
+    "Nghiện anh rồi đúng không =)))",
+    "Finallyyyyyy, em đã chịu chụp ảnh với anh rồi =)))",
+    "Bức ảnh đánh dấu cột mốc mới của chúng mình, cảm ơn em vì đã luôn đồng hành cùng anh trong suốt thời gian qua, giúp anh luôn muốn trở thành một người tốt hơn và cười nhiều hơn mỗi ngày ♥️ I love you so muchhhhhh",
+    "Bức ảnh hiếm hoi mà anh tự chụp :v lúc đấy anh không nói nhưng anh vui lắm aaaaaaaaaa",
+    "Trong rạp phim :v trước thời khắc em làm anh muốn xem phim liên tục 7 ngày 7 đêm =)))",
+    "Yayyy =)))) thế là chúng ta đã là một đôiiiii :v anh thích ảnh với ví lắm =))) cảm ơn em",
+    "Hôm em qua nhà bạn chơi xong gửi ảnh này cho anh =))) trông mặt búng ra sữa ha =)))",
+    "Còn đây búng ra thái độ 🤣🤣 cưng ha",
+    "Chài ai cô gái ấy 🤣🤣 trông muốn hun ghê",
+    "Em phải phúng phính như nài nàiiiiii =))) em cứ béo lên đi anh hứa sẽ không chê em đâu",
+    "Đi ăn cháo trai ha :v khoe anh cái mũ cute như anh ha :v đây cũng là hôm đầu mình ôm nhau lâu thật lâu đấy 🤣🤣",
+    "Đi dạo công viên Hoà Bình nhưng thất bại ha 🤣🤣 \n Em nói em thích ảnh này lắm, còn anh thích em ♥️",
+    "Công viên hồ điều hoà Thanh Xuân đồ ha =))) ngồi được tí thì bị đuổi",
+    "Cô gái của anh mặc đồ của anh =))) trông cưng vãi",
+    "Phú bà xinh đẹp và học bá đẹp zai của cô ta 🤣🤣",
+    "Học bá đẹp zai hun phú bà xinh đẹp để được ăn bánh =)))",
+    "Phú bà xinh đẹp giỏi giang hớn hở với chiếc bánh đầy tâm tư tình cảm và học bá đẹp zai của cổ",
+    "Lớn thế rồi mà giờ mới biết bánh ngon là do chữ 🤣🤣",
+    "Ỏooo em vừa hỏi anh nên lấy ảnh nào làm thumbnail, anh nghĩ là anh nên lấy em :3",
+    "Chài ai xinh quá chàiiiiii",
+    "Anh vẫn không thể hiểu nổi tại sao em thiếu ngủ mà vẫn xinh như thế này =)))",
+    "Em có vẻ thích ảnh này vì trông girl phố đồ ha =)))",
+    "Riêng anh thì anh thích ảnh này hơn 🤣🤣",
+    "Sắp được đi concert với học bá đẹp zai rồi ha =))) chắc hẳn là cổ thích lắm",
+    "Khép miệng lại để tôi hôn một miếng =)))",
+    "Cái này trông cũng bướng phết ha =)))",
+    "Và cuối cùng là gái yêu của anh và 2 gái yêu của cổ =)))"
 ];
 
 // ===== STATE =====
@@ -45,127 +91,57 @@ let mouseX = 0;
 let scrollX = 0;
 let galleryAnimationId = null;
 
-// ===== SCENE 1: CAKE ===== //
+// ===== SCENE 1: CAKE (SVG + CSS ANIMATIONS) ===== //
 function initCake() {
-    const canvas = document.getElementById('cake-canvas');
-    const ctx = canvas.getContext('2d');
+    const sceneElement = document.getElementById(SCENES.CAKE);
     
-    drawCake(ctx, canvas.width, canvas.height);
-    animateFlame(ctx, canvas);
+    // Add the burning class to trigger fire animations
+    sceneElement.classList.add('burning');
     
-    document.getElementById('blow-btn').addEventListener('click', blowCandle);
-}
-
-function drawCake(ctx, w, h) {
-    // Layer 1
-    ctx.fillStyle = '#ff8fab';
-    drawOval(ctx, 120, 280, 480, 380);
-    ctx.fillStyle = '#ff99ac';
-    drawOval(ctx, 130, 270, 470, 350);
+    // Setup blow button
+    const blowBtn = document.getElementById('blow-btn');
+    blowBtn.addEventListener('click', blowCandle);
     
-    // Layer 2
-    ctx.fillStyle = '#ffc2d1';
-    drawOval(ctx, 170, 220, 430, 300);
-    ctx.fillStyle = '#ffd6e0';
-    drawOval(ctx, 180, 210, 420, 270);
-    
-    // Layer 3
-    ctx.fillStyle = '#ffe5ec';
-    drawOval(ctx, 220, 170, 380, 230);
-    ctx.fillStyle = '#fff0f5';
-    drawOval(ctx, 230, 160, 370, 210);
-    
-    // Kem mềm
-    ctx.fillStyle = 'white';
-    for (let x = 240; x < 360; x += 20) {
-        drawOval(ctx, x, 210, x + 15, 240);
-    }
-    
-    // Topping
-    ctx.fillStyle = '#ff4d6d';
-    drawOval(ctx, 290, 130, 310, 150);
-    
-    // Draw candles
-    drawCandles(ctx);
-}
-
-function drawOval(ctx, x1, y1, x2, y2) {
-    const radiusX = (x2 - x1) / 2;
-    const radiusY = (y2 - y1) / 2;
-    const centerX = x1 + radiusX;
-    const centerY = y1 + radiusY;
-    
-    ctx.beginPath();
-    ctx.ellipse(centerX, centerY, radiusX, radiusY, 0, 0, Math.PI * 2);
-    ctx.fill();
-}
-
-function drawCandles(ctx) {
-    candle_positions = [];
-    ctx.fillStyle = 'white';
-    ctx.strokeStyle = 'black';
-    ctx.lineWidth = 2;
-    
-    for (let x = 250; x < 360; x += 30) {
-        // Candle stick
-        ctx.fillRect(x - 4, 120, 8, 30);
-        // Wick
-        ctx.beginPath();
-        ctx.moveTo(x, 110);
-        ctx.lineTo(x, 120);
-        ctx.stroke();
-        
-        candle_positions.push(x);
-    }
-}
-
-function animateFlame(ctx, canvas) {
-    if (!isBurning) return;
-    
-    // Clear only the flame area
-    ctx.clearRect(0, 80, canvas.width, 60);
-    
-    // Redraw cake (without candles)
-    drawCake(ctx, canvas.width, canvas.height);
-    
-    flameOffset = (flameOffset + 1) % 6;
-    const offset = [-2, -1, 0, 1, 2, 0][flameOffset];
-    
-    ctx.fillStyle = 'orange';
-    for (let x of candle_positions) {
-        drawOval(ctx, x - 6 + offset, 95, x + 6 + offset, 130);
-    }
-    
-    ctx.fillStyle = 'yellow';
-    for (let x of candle_positions) {
-        drawOval(ctx, x - 3 + offset, 105, x + 3 + offset, 130);
-    }
-    
-    setTimeout(() => animateFlame(ctx, canvas), 80);
+    // Show button when fire is about to start (5.5s)
+    setTimeout(() => {
+        blowBtn.style.visibility = 'visible';
+    }, 5500);
 }
 
 function blowCandle() {
-    isBurning = false;
-    const canvas = document.getElementById('cake-canvas');
-    const ctx = canvas.getContext('2d');
+    // Get and disable the blow button
+    const blowBtn = document.getElementById('blow-btn');
+    blowBtn.disabled = true;
+    blowBtn.style.opacity = '0.6';
+    blowBtn.style.cursor = 'not-allowed';
     
-    ctx.clearRect(0, 80, canvas.width, 60);
+    // Stop the candle burning animation
+    const sceneElement = document.getElementById(SCENES.CAKE);
+    sceneElement.classList.remove('burning');
     
-    // Draw smoke
-    ctx.fillStyle = 'gray';
-    for (let x of candle_positions) {
-        for (let i = 0; i < 6; i++) {
-            drawOval(ctx, x - 4, 95 - i * 10, x + 4, 105 - i * 10);
-        }
-    }
+    // Hide fire
+    const fires = document.querySelectorAll('.fuego');
+    fires.forEach(fire => {
+        fire.style.display = 'none';
+    });
     
     // Show message
     const msgEl = document.createElement('div');
-    msgEl.style.cssText = 'position: absolute; font-size: 26px; color: white; text-align: center;';
-    msgEl.textContent = '🎉 Make a wish 🎉';
-    document.getElementById('scene-cake').appendChild(msgEl);
+    msgEl.style.cssText = `
+        position: absolute;
+        font-size: 48px;
+        font-family: '1KHighSpirited';
+        color: #a21d33;
+        text-align: center;
+        animation: fadeIn 1.5s ease-out;
+        z-index: 20;
+        margin-top: -300px;
+    `;
+    msgEl.textContent = '🎉 Happy birthday honeyyyyyy! 🎉';
+    sceneElement.appendChild(msgEl);
     
-    setTimeout(() => switchScene(SCENES.GALLERY), 2000);
+    // Transition to gallery after 2 seconds
+    setTimeout(() => switchScene(SCENES.GALLERY), 3000);
 }
 
 // ===== SCENE 2: GALLERY =====
@@ -183,7 +159,7 @@ function initGallery() {
         item.className = 'gallery-item';
 
         const img = document.createElement('img');
-        img.src = `images/${file}`;
+        img.src = `/images/${file}`;
         img.onerror = () => {
             console.warn(`Failed to load ${file}`);
         };
@@ -215,9 +191,18 @@ function initGallery() {
     // Mouse wheel scrolling - transform vertical to horizontal smoothly
     container.addEventListener('wheel', (e) => {
         e.preventDefault();
-        container.scrollLeft += e.deltaY * 6;
+        container.scrollLeft += e.deltaY * 4;
     }, { passive: false });
     
+    // Button to go to scene-message
+    const toCardBtn = document.getElementById('to-card-btn');
+    if (toCardBtn) {
+        toCardBtn.style.display = 'inline-block';
+        toCardBtn.addEventListener('click', () => {
+            switchScene(SCENES.MESSAGE);
+        });
+    }
+
     // Start animation loop
     if (galleryAnimationId) cancelAnimationFrame(galleryAnimationId);
     animateGallery();
@@ -271,20 +256,167 @@ function animateGallery() {
     galleryAnimationId = requestAnimationFrame(animateGallery);
 }
 
+function cleanupGallery() {
+    // Stop animation loop
+    if (galleryAnimationId) {
+        cancelAnimationFrame(galleryAnimationId);
+        galleryAnimationId = null;
+    }
+
+    // Remove event listeners
+    const container = document.querySelector('.gallery-container');
+    container.removeEventListener('scroll', updateGalleryScroll);
+    container.removeEventListener('mousemove', updateMousePosition);
+    container.removeEventListener('wheel', handleWheelScroll);
+}
+
 // ===== SCENE 3: MESSAGE =====
 function initMessage() {
-    // Message already in HTML
+    const galleryScene = document.getElementById(SCENES.GALLERY);
+    galleryScene.id = SCENES.MESSAGE;
+    galleryScene.innerHTML = `
+        <div class="birthday-card">
+            <h1>Happy Birthday!</h1>
+            <p>Wishing you all the happiness and love in the world on your special day!</p>
+            <div class="card-footer">With love, from someone who cares deeply about you ❤️</div>
+        </div>
+        
+        <div class="question-box">
+            <div class="question-text">Em có yêu anh honggggg ❤️</div>
+            <div class="button-group">
+                <button class="answer-btn yes-btn">Em cóooo 😍</button>
+                <button class="answer-btn no-btn">Em bình thườngggg 😢</button>
+            </div>
+            <div class="answer-display" style="display: none; margin-top: 20px; font-size: 24px; font-family: Arial, sans-serif; text-align: center; color: #a21d33;">
+                Em biết rồi khe khe 😘
+            </div>
+        </div>
+    `;
+    
+    // Setup button listeners
+    const yesBtn = galleryScene.querySelector('.yes-btn');
+    const noBtn = galleryScene.querySelector('.no-btn');
+    const answerDisplay = galleryScene.querySelector('.answer-display');
+    let clicked = false;
+    
+    yesBtn.addEventListener('click', () => {
+        if (!clicked) {
+            // No swap - just show answer and disable
+            answerDisplay.style.display = 'block';
+            yesBtn.disabled = true;
+            noBtn.disabled = true;
+            
+            // Change color of YES button to indicate selection
+            yesBtn.style.background = '#a21d33';
+            yesBtn.style.color = 'white';
+            
+            clicked = true;
+        }
+    });
+    
+    noBtn.addEventListener('click', () => {
+        if (!clicked) {
+            // Swap button content ONLY for "Không"
+            const tempText = yesBtn.textContent;
+            yesBtn.textContent = noBtn.textContent;
+            noBtn.textContent = tempText;
+            
+            // Show answer and disable buttons
+            answerDisplay.style.display = 'block';
+            answerDisplay.textContent = 'Tao biết mà! Tao cũng yêu em 🥰';
+            yesBtn.disabled = true;
+            noBtn.disabled = true;
+            
+            // Change color of NO button to indicate selection
+            noBtn.style.background = '#a21d33';
+            noBtn.style.color = 'white';
+            
+            clicked = true;
+        }
+    });
 }
 
 // ===== SCENE MANAGEMENT =====
 function switchScene(sceneName) {
+    console.log(`Switching to scene: ${sceneName}`); // Debug log
+
+    // Replace scene 2 with scene 3
+    if (sceneName === SCENES.MESSAGE) {
+        console.log('Initializing scene 3 (MESSAGE)...'); // Debug log
+        const galleryScene = document.getElementById(SCENES.GALLERY);
+        galleryScene.id = SCENES.MESSAGE;
+        galleryScene.innerHTML = `
+            <div class="birthday-card">
+                <h1>Happy Birthday!</h1>
+                <p>   Hiii báe iu của anhhh ♥️\n\nChúc mừng sinh nhật em nhá 🤣 Cảm ơn em vì đã đồng hành cùng anh suốt thời gian qua, tuy là chưa dài nhưng em đã cho anh biết thế nào là được sống và được yêu ♥️\nChúc em chân cứng đá mềm, luôn thật hạnh phúc và bình an.\nHi vọng đến mãi về sau, mỗi khoảnh khắc nhìn thấy nhau, anh và em vẫn sẽ đều bất giác cười.\nI love you more than any word can say ♥️ </p>
+                <div class="card-footer">With love, from someone who just wants to cook for you every day ❤️</div>
+            </div>
+            
+            <div class="question-box">
+                <div class="question-text">Em có yêu anh honggggg ❤️</div>
+                <div class="button-group">
+                    <button class="answer-btn yes-btn">Em cóooo 😍</button>
+                    <button class="answer-btn no-btn">Em bình thườngggg 🤣</button>
+                </div>
+                <div class="answer-display" style="display: none; margin-top: 20px; font-size: 24px; font-family: Arial, sans-serif; text-align: center; color: #a21d33;">
+                    Đúng nhẽ thôi =))) Anh cũng yêu báeeeeee 
+                </div>
+            </div>
+        `;
+        
+        // Setup button listeners
+        const yesBtn = galleryScene.querySelector('.yes-btn');
+        const noBtn = galleryScene.querySelector('.no-btn');
+        const answerDisplay = galleryScene.querySelector('.answer-display');
+        let clicked = false;
+        
+        yesBtn.addEventListener('click', () => {
+            if (!clicked) {
+                // No swap - just show answer and disable
+                answerDisplay.style.display = 'block';
+                yesBtn.disabled = true;
+                noBtn.disabled = true;
+                
+                // Change color of YES button to indicate selection
+                yesBtn.style.background = '#a21d33';
+                yesBtn.style.color = 'white';
+                
+                clicked = true;
+            }
+        });
+        
+        noBtn.addEventListener('click', () => {
+            if (!clicked) {
+                // Swap button content ONLY for "Không"
+                const tempText = yesBtn.textContent;
+                yesBtn.textContent = noBtn.textContent;
+                noBtn.textContent = tempText;
+                
+                // Show answer and disable buttons
+                answerDisplay.style.display = 'block';
+                answerDisplay.textContent = 'Phải yêu thôi =))) Anh cũng yêu báeeeeee ';
+                yesBtn.disabled = true;
+                noBtn.disabled = true;
+                
+                // Change color of NO button to indicate selection
+                noBtn.style.background = '#a21d33';
+                noBtn.style.color = 'white';
+                
+                clicked = true;
+            }
+        });
+        
+        currentScene = SCENES.MESSAGE;
+        return;
+    }
+
     // Hide current scene
     document.getElementById(currentScene).classList.remove('active');
-    
+
     // Show new scene
     document.getElementById(sceneName).classList.add('active');
     currentScene = sceneName;
-    
+
     // Initialize scene
     if (sceneName === SCENES.CAKE) {
         isBurning = true;
@@ -292,10 +424,6 @@ function switchScene(sceneName) {
         initCake();
     } else if (sceneName === SCENES.GALLERY) {
         initGallery();
-    } else if (sceneName === SCENES.MESSAGE) {
-        if (galleryAnimationId) cancelAnimationFrame(galleryAnimationId);
-        initMessage();
-        setTimeout(() => switchScene(SCENES.CAKE), 5000);
     }
 }
 
