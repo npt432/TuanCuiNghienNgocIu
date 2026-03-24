@@ -53,7 +53,7 @@ body {
     position: relative;
     width: 400px;
     height: auto;
-    margin: -550px auto 0 auto;
+    margin: 0 auto;
     filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
 }
 
