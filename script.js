@@ -1,3 +1,7 @@
+const BASE_PATH =
+    window.location.hostname === 'npt432.github.io'
+        ? '/TuanCuiNghienNgocIu'
+        : '';
 // ===== CONSTANTS =====
 const SCENES = {
     CAKE: 'scene-cake',
@@ -159,7 +163,7 @@ function initGallery() {
         item.className = 'gallery-item';
 
         const img = document.createElement('img');
-        img.src = `/TuanCuiNghienNgocIu/images/${file}`;
+        img.src = `${BASE_PATH}/images/${file}`;
         img.onerror = () => {
             console.warn(`Failed to load ${file}`);
         };

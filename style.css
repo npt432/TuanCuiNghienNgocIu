@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: '1KHighSpirited';
-    src: url('fonts/1KHighSpirited.otf') format('opentype');
+    src: url('./fonts/1KHighSpirited.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -53,7 +53,7 @@ body {
     position: relative;
     width: 400px;
     height: auto;
-    margin: -550px auto 0 auto;
+    margin: -600px auto 0 auto;
     filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
 }
 
@@ -62,13 +62,13 @@ body {
     background: #FFE9F3;
     border-radius: 10px;
     position: absolute;
-    top: 180px;
+    top: 130px;
     left: 50%;
     margin-left: -2.4px;
     margin-top: -8.33333333px;
     width: 10px;
     height: 100px;
-    transform: translateY(-600px);
+    transform: translateY(-700px);
     backface-visibility: hidden;
     animation: in 500ms 6s ease-out forwards;
     z-index: 10;
